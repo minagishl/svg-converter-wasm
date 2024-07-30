@@ -1,0 +1,10 @@
+.editorconfig
+.prettierrc
+tsconfig.json
+.DS_Store
+target/
+pkg/
+Cargo.lock
+Cargo.toml
+scripts/
+src/

@@ -26,7 +26,7 @@ async function build() {
   }
 
   fs.readdirSync(pkgDir).forEach((file) => {
-    if (file !== 'package.json') {
+    if (file !== 'package.json' && file !== '.gitignore') {
       fs.copyFileSync(path.join(pkgDir, file), path.join(distDir, file));
     }
   });
