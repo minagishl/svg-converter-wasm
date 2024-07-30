@@ -1,19 +1,21 @@
 {
-	"name": "svg-converter-wasm",
-	"version": "1.0.0",
-	"description": "Convert SVG to PNG and JPEG using WebAssembly",
-	"main": "./dist/index.js",
-	"types": "./dist/index.d.ts",
-	"files": [
-		"dist"
-	],
-	"scripts": {
-		"build": "wasm-pack build --target web && node scripts/build.js"
-	},
-	"author": "Minagishl",
-	"license": "MIT",
-	"dependencies": {
-		"esbuild": "^0.23.0",
-		"esbuild-plugin-d.ts": "^1.3.0"
-	}
+  "name": "svg-converter-wasm",
+  "version": "1.0.0",
+  "description": "Convert SVG to PNG and JPEG using WebAssembly",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "wasm-pack build --target web && node scripts/build.js",
+    "format": "prettier --write ./src ./scripts"
+  },
+  "author": "Minagishl",
+  "license": "MIT",
+  "dependencies": {
+    "esbuild": "^0.23.0",
+    "esbuild-plugin-d.ts": "^1.3.0",
+    "prettier": "^3.3.3"
+  }
 }
